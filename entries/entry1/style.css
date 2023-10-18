@@ -1,0 +1,115 @@
+.Lexend {
+    font-family: 'Lexend', sans-serif;
+  }
+
+.Lekton {
+    font-family: 'Lekton', sans-serif;
+  }
+
+h1{
+    font-family: 'Lekton';
+    color: #163209;
+    font-size: 200px; 
+    text-align: center;
+    letter-spacing: 20px;
+
+} 
+
+h2{
+    font-family: 'Lexend';
+    color: #163209;
+    font-size: 32px; 
+    letter-spacing: 3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+} 
+
+h3{
+    font-family: 'Lekton';
+    color: #163209;
+    font-size: 60px; 
+    letter-spacing: 6px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+} 
+
+h4{
+    font-family: 'Lekton';
+    color: #163209;
+    font-size: 15px; 
+    text-align: center;
+}
+
+p{
+    font-family: 'Lexend', sans-serif;
+    color: #163209;
+    font-size: 20px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 30px; 
+    justify-content: space-between;
+}
+
+.flex-container > div {
+    width: auto;
+}
+
+.photo-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+}
+
+.text-container > div {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#grad1 {
+    height: auto;
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(white, #4F8B79);
+  }
+
+.alignleft{
+    text-align: left;
+}
+
+.alignright{
+    text-align: right;
+}
+
+.aligncenter{
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

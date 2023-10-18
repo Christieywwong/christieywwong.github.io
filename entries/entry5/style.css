@@ -1,0 +1,202 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg{
+    background-image: url("imgs/Mimosa.jpg");
+    height: 850px; 
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Oriyamn', sans-serif;
+    src: url(font/oriya_mn-webfont.woff) format("woff");
+}
+.OpenSans{
+    font-family: 'OpenSans', sans-serif;
+}
+h1{
+    font-family: 'Oriyamn', sans-serif;
+    color: white;
+    font-size: 300px; 
+    padding-top:0px;
+    letter-spacing: 7px;
+    line-height: 1;
+    text-align: left;
+}
+h2{
+    font-family: 'Oriyamn';
+    color: #1C3816;
+    font-size: 32px; 
+    margin: 0px;
+    margin-bottom: -20px;
+    padding-left:0px;
+    padding-right:20px;
+    padding-bottom:-50px;
+    letter-spacing: 7px;
+} 
+h3 {
+    font-family: 'Oriyamn', sans-serif;
+    color: #1C3816;
+    font-size: 27px;
+    margin-bottom: 5px;
+    margin-top: 10px
+} 
+h4{
+    font-family: 'Oriyamn', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 10px}
+p{
+    font-family: 'OpenSans', sans-serif;
+    color: #1C3816;
+    font-size: 20px; 
+    padding-left:0px;
+    padding-right:20px;
+    line-height: 32px;
+} 
+.aligncenter{
+    text-align: center;
+}
+
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+a:hover {
+    color: #BA8402;
+    text-decoration: underline;
+}
+a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+.bottom-right {
+    position: absolute;
+    top: 800px;
+    right: 16px;
+  }
+.top-left {
+    position: absolute;
+    top: -220px;
+    left: -40px;
+  }
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.rcornerstitle {
+    border-radius: 60px;
+    background: #FFFEFD;
+    padding: 20px; 
+    width: 450px;
+    height: 540px; 
+    position: absolute;
+    right: 58.5px;
+    top: 100px;
+    justify-content: left;
+} 
+.HandSoapPhotoBox {
+    border-right: 3px solid #1C3816;
+    padding-right: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    margin-bottom: 0px; 
+    margin-left: 90px; 
+    margin-right: 90px; 
+    margin-top: 10px; 
+    justify-content: center;
+}
+.flex-container > * {
+    margin: 20px;
+}
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    margin-bottom: 0px; 
+    justify-content: center;
+    margin-left: 90px; 
+    margin-right: 90px; 
+}
+.flex-container2 > * {
+    margin: 20px;
+}
+.flex-container3 {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    margin-bottom: 0px; 
+    margin-left: 90px; 
+    margin-right: 90px; 
+    margin-top: 60px; 
+    justify-content: center;
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 10px; 
+    justify-content: space-between;
+    border-bottom: 1px solid #1C3816;
+}
+.nav-container > div {
+    width: auto;
+}
+.photo-container {
+    position: relative;
+    text-align: center;
+}
+
+
+/* for mobile */
+@media screen and (max-width: 800px) {
+    .HandSoapPhotoBox {
+        order: 1;
+        float: left;
+        justify-content:flex-start;
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+    }
+    .TextBox {
+        display: flex;
+        order: 2;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+    }
+}
+
+/* for large screens */
+@media screen and (min-width: 801px) {
+    .HandSoapPhotoBox {
+        order: 1;
+        flex: 2;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+    }
+    .TextBox {
+        flex: 3;
+        order: 2;
+        flex:3;
+        text-align: left;
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+    }
+}

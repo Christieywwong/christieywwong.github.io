@@ -1,0 +1,159 @@
+
+
+h1 {
+  font-family: 'Croissant One', cursive;
+  color: #E04C3D;
+  font-size: 67px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  }
+   
+h2{
+  font-family: 'Croissant One', cursive;
+  color:black;
+  font-size: 133px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  line-height: 1;
+  }
+  
+h3 {
+  font-family: 'Croissant One', cursive;
+  color: #E04C3D;
+  font-size: 27px;
+  margin-bottom: 5px;
+  margin-top: 10px
+}  
+h4 {
+  letter-spacing: 20px;
+  color: #E04C3D;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  }
+
+p{
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  line-height: 1.5;
+
+}
+#whitebox {
+  background: white;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: left;
+}
+.redstrip {
+  background-color: #E04C3D;
+  height: 40px;
+  width: 25%;
+  margin: 0;
+  flex: 1;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 0px; 
+    justify-content: space-between;
+}
+.nav-container > div {
+    width: auto;
+}
+.Title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Title-container > div {
+  width: auto;
+  margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  margin-bottom: 0px; 
+  justify-content: center;
+}
+.flex-container > * {
+  margin: 20px;
+
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  margin: 0px; 
+  padding: 40px;
+  justify-content: center;
+  background-color: #BFDECF;
+
+}
+.flex-container2 > * {
+  margin: 20px;
+}
+
+.alignleft{
+  text-align: left;
+}
+.alignright{
+  text-align: right;
+}
+.aligncenter{
+  text-align: center;
+}
+.column{
+  flex-direction: column;
+}
+/* for mobile */
+@media screen and (max-width: 800px) {
+  .TitleText{
+    display: flex;
+    text-align: left;
+  }
+  .TextBox {
+    display: flex;
+    text-align: left;
+  }
+
+  .TextBox2 {
+    display: flex;
+    text-align: left;
+}
+  .FriedRicePhoto {
+    display: flex;
+    text-align: left;
+  }
+}
+
+/* for large screens */
+@media screen and (min-width: 801px) {
+  .TitleText{
+    flex: 1;
+    text-align: center;
+  }
+  .TextBox {
+    flex: 3;
+    text-align: left;
+  }
+  .TextBox2 {
+    flex: 4;
+    text-align: left;
+  }
+  .FriedRicePhoto {
+    flex: 1;
+    text-align: left;
+    margin-top: 30px; 
+    margin-left: 30px; 
+    margin-right: 30px; 
+  }
+}

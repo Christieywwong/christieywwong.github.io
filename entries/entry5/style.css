@@ -17,6 +17,10 @@ body, html {
 .OpenSans{
     font-family: 'OpenSans', sans-serif;
 }
+
+.Oriyamn{
+    font-family: 'Oriyamn', sans-serif;
+}
 h1{
     font-family: 'Oriyamn', sans-serif;
     color: white;
@@ -25,6 +29,7 @@ h1{
     letter-spacing: 7px;
     line-height: 1;
     text-align: left;
+    font-weight: 200;
 }
 h2{
     font-family: 'Oriyamn';
@@ -36,20 +41,24 @@ h2{
     padding-right:20px;
     padding-bottom:-50px;
     letter-spacing: 7px;
+    font-weight: 200;
 } 
 h3 {
     font-family: 'Oriyamn', sans-serif;
     color: #1C3816;
-    font-size: 27px;
+    font-size: 28px;
     margin-bottom: 5px;
-    margin-top: 10px
+    margin-top: 10px;
+    font-weight: 200;
 } 
 h4{
     font-family: 'Oriyamn', sans-serif;
     color: white;
     font-size: 16px;
     margin-bottom: 5px;
-    margin-top: 10px}
+    margin-top: 10px;
+    font-weight: 200;
+}
 p{
     font-family: 'OpenSans', sans-serif;
     color: #1C3816;
@@ -57,6 +66,8 @@ p{
     padding-left:0px;
     padding-right:20px;
     line-height: 32px;
+    font-weight: 200;
+
 } 
 .aligncenter{
     text-align: center;
@@ -64,7 +75,6 @@ p{
 
 a:link {
     color: white;
-    text-decoration: underline;
 }
 a:hover {
     color: #BA8402;
@@ -148,7 +158,10 @@ a:visited {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    margin: 10px; 
+    margin-top: 50px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
     justify-content: space-between;
     border-bottom: 1px solid #1C3816;
 }
@@ -200,3 +213,37 @@ a:visited {
         margin-top: 0px; 
     }
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid #1C3816;
+    background-color: #FFFFFF;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #FFFFFF;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #1C3816;
+  }

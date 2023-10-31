@@ -1,68 +1,75 @@
 .Lexend {
     font-family: 'Lexend', sans-serif;
-  }
+}
 
 .Lekton {
     font-family: 'Lekton', sans-serif;
-  }
+}
 
-h1{
+h1 {
     font-family: 'Lekton';
     color: #163209;
-    font-size: 200px; 
+    font-size: 200px;
     text-align: center;
     letter-spacing: 20px;
+    font-weight: 200;
+}
 
-} 
-
-h2{
+h2 {
     font-family: 'Lexend';
     color: #163209;
-    font-size: 32px; 
+    font-size: 28px;
     letter-spacing: 3px;
     margin-top: -10px;
     margin-bottom: -10px;
-} 
+    font-weight: 200;
 
-h3{
+}
+
+h3 {
     font-family: 'Lekton';
     color: #163209;
-    font-size: 60px; 
+    font-size: 60px;
     letter-spacing: 6px;
     margin-top: 50px;
     margin-bottom: 0px;
     text-align: center;
-} 
-
-h4{
-    font-family: 'Lekton';
-    color: #163209;
-    font-size: 15px; 
-    text-align: center;
+    font-weight: 100;
 }
 
-p{
+h4 {
+    font-family: 'Lekton';
+    color: #163209;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+}
+
+p {
     font-family: 'Lexend', sans-serif;
     color: #163209;
-    font-size: 20px; 
+    font-size: 20px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 300px;
     margin-right: 300px;
+    font-weight: 100;
 }
-
 
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    margin: 30px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     justify-content: space-between;
 }
 
 .flex-container > div {
     width: auto;
+    margin-top: 60px;
 }
 
 .photo-container {
@@ -71,7 +78,7 @@ p{
     color: white;
     margin-top: 60px;
     margin-bottom: 60px;
-  }
+}
 
 .text-container {
     display: flex;
@@ -90,19 +97,19 @@ p{
 
 #grad1 {
     height: auto;
-    background-color: white; /* For browsers that do not support gradients */
+    background-color: white;
     background-image: linear-gradient(white, #4F8B79);
-  }
+}
 
-.alignleft{
+.alignleft {
     text-align: left;
 }
 
-.alignright{
+.alignright {
     text-align: right;
 }
 
-.aligncenter{
+.aligncenter {
     text-align: center;
 }
 
@@ -113,3 +120,40 @@ p{
     transform: translate(-50%, -50%);
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid #163209;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #FFFFFF;
+}
+
+li a.active {
+    color: white;
+    background-color: #163209;
+}
+
+a:hover {
+    text-decoration: underline;
+  }

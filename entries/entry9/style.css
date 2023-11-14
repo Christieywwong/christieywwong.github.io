@@ -1,0 +1,317 @@
+body {
+    background-color: #FFB102;
+}
+
+.Mukta{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.MuktaBold{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #E20922;
+}
+.novelpro-reg{
+    font-family: novel-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.novelpro-italic{
+    font-family: novel-pro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1{
+    font-size: 125px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #E20922;
+    letter-spacing: 12.5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+} 
+
+h2{
+    font-size: 70px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 4px;
+    line-height: 1.2;
+} 
+
+h3{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #E20922;
+    margin-top: 15px;
+} 
+
+p{ 
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #330400;
+    font-size: 28px; 
+    letter-spacing: 1px;
+    line-height: 60px;
+    text-align: left;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.photo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1%;
+    margin-top: -2%;
+    border-bottom: solid #17133E 1px ;
+}
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 70%;
+
+}
+.photo-container > div {
+    width: auto;
+}
+.ChineseCharacter{    
+    font-size: 125px;
+    font-family: novel-pro, sans-serif;
+    font-weight: 700;
+    color: #E20922;
+    letter-spacing: 12.5px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 10%;
+    position: relative;
+
+}
+.Statement{
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.Content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1%;
+    border-top: solid #E20922 25px ;
+    border-bottom: solid #E20922 25px ;
+    height: auto;
+}
+.Content-section > div {
+    height: auto;
+}
+.Content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    color: #330400
+}
+.Content-container > div {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+.side-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed; 
+    white-space: nowrap; 
+    font-size: 150px;
+    background: #17133E;  
+    width: auto;
+    text-align: center;  
+    font-size: 100px;
+    font-family: novel-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    letter-spacing: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed; 
+    white-space: nowrap; 
+    font-size: 150px;
+    background: #17133E;  
+    width: auto;
+    text-align: center;  
+    font-size: 100px;
+    font-family: novel-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    letter-spacing: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.bg{
+    background-image: url("imgs/TigerBalm.png");
+    height: 950px; 
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-top: -10px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: -7px;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid #321C08;
+    background-color: #FFB102;
+}
+li {
+    display: inline;
+}
+li.left-element {
+    margin-left: 10px;
+    text-align: left;
+}
+li.center-element {
+    text-align: center;
+}
+li.right-element {
+    margin-right: 10px; 
+    text-align: right;
+}
+li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #E20922; 
+    font-size: 28px; 
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+li a:hover:not(.active) {
+    background-color: #FFFFFF;
+}
+li a.active {
+    color: #E20922;
+}
+
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+  @media screen and (max-width: 800px) {
+    .ChineseCharacter {
+            font-size: 62.5px;
+            letter-spacing: 6.25px;
+        }
+    .vertical-text{
+        font-size: 75px;
+        letter-spacing: 7.5px;
+    }
+    .photo-section h1{
+        font-size: 62.5px;
+        letter-spacing: 6.25px;
+        line-height: 1;
+    }
+
+    .image-container h2{
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 1;
+    }
+    .side-text{
+        font-size: 75px;
+        letter-spacing: 7.5px;
+    }
+
+    .Content-container h2{
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 1;
+    }
+
+
+    .Content-container p{
+        font-size: 17.5px; 
+        letter-spacing: 1px;
+        line-height: 1.5;
+    } 
+    .nav-container h3{
+            font-size: 22.4px;
+        }
+    .li a {
+            font-size: 22.4px;
+        }
+    }

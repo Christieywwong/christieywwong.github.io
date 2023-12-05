@@ -76,7 +76,7 @@ p{
   height: 950px; 
   background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-left: -7px;
   margin-right: -7px;
   margin-top: -10px;

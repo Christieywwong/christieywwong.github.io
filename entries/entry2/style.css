@@ -4,7 +4,6 @@ body {
 .Georgia{    
     font-family: Georgia,Times,Times New Roman,serif;
 }
-
 @font-face {
     font-family: "Gelasio", serif;
     src: url(font/gelasio-regular.woff) format("woff");
@@ -30,8 +29,9 @@ h3{
     color: #163209;
     font-size: 28px;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: 200;
+    letter-spacing: 1px;
 }
 h4{
     color: #F2EFE5;
@@ -44,7 +44,7 @@ h4{
 p{
     color: #163209;
     font-family: Georgia,Times,Times New Roman,serif;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 10px;
     line-height: 140%;
 }
@@ -63,7 +63,7 @@ li {
 }
 .centered {
     position: absolute;
-    top: 275px;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -74,17 +74,17 @@ li {
   }
 
 
-#rcorners {
+.rcorners {
     border-radius: 250px;
     background: #243932;
     color: #F2EFE5;
-    padding-top: 30px;
-    padding-left: 40px;
-    text-align: left;
+    padding: 30px;
+    text-align: center;
     width: 275px;
-    height: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 a:visited {
@@ -104,7 +104,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    margin-top: 60px; 
+    margin-top: 50px; 
     margin-bottom: 0px; 
     margin-right: 0px; 
     margin-left: 0px; 
@@ -125,11 +125,10 @@ a:hover {
     justify-content: center;
     border-bottom: 1px solid #1C3816;
     border-top: 1px solid #1C3816;
-
 }
+
 .flex-container > * {
     margin: 20px;
-
 }
 .ChloePhotoBox {
     border-right: 1px solid #1C3816;
@@ -145,6 +144,58 @@ a:hover {
 .flex-container2 > * {
     margin: 20px;
 }
+
+/* NAVIGATION */
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: -7px;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    display: flex; 
+    justify-content: space-between;
+    background-color: #F2EFE5;
+    border-bottom: solid 1px #163209;
+}
+li {
+    display: inline;
+}
+li.left-element {
+    margin-left: 10px;
+    text-align: left;
+}
+li.center-element {
+    text-align: center;
+}
+li.right-element {
+    margin-right: 10px; 
+    text-align: right;
+}
+li a {
+    display: block;
+    padding: 14px 16px;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #163209; 
+    font-size: 28px; 
+}
+li a:hover:not(.active) {
+    background-color: #F2EFE5;
+}
+li a.active {
+    color: #163209;
+}
+  /* NAVIGATION END */
 
 /* for mobile */
 @media screen and (max-width: 800px) {
@@ -163,32 +214,6 @@ a:hover {
         margin-bottom: 0px; 
         margin-top: 0px; 
     }
-}
-/* for large screens */
-@media screen and (min-width: 801px) {
-    .ChloePhotoBox {
-        order: 1;
-        flex:1;
-        float: left;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-bottom: 0px; 
-        margin-top: 0px; 
-
-    }
-    .TextBox {
-        display: flex;
-        order: 2;
-        flex-direction: column;
-        flex:2;
-        text-align: left;
-        margin-bottom: 0px; 
-        margin-top: 0px; 
-    }
-}
-
-/* for mobile */
-@media screen and (max-width: 800px) {
     .TextBox2 {
         display: flex;
         order: 1;
@@ -204,9 +229,80 @@ a:hover {
         margin-bottom: 0px; 
         margin-top: 0   
     }
+    .nav-container h3{
+        font-size: 20px;
+    }
+    li a {
+        font-size: 20px;
+    }
+    .photo-container h1{
+        font-family: 'EB Garamond', serif;
+        color: #F2EFE5;
+        font-size: 100px;   
+        font-weight: 200; 
+    }
+    .photo-container h4{
+        color: #F2EFE5;
+        font-family: Georgia,Times,Times New Roman,serif;
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 140%;
+    }
+    .flex-container h2{
+        font-family: 'EB Garamond', serif;
+        color: #163209;
+        font-size: 35px;
+    }
+    .flex-container p{
+        color: #163209;
+        font-family: Georgia,Times,Times New Roman,serif;
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .flex-container h3{
+        font-size: 20px;
+    }
+    .rcorners{
+        padding: 15px;
+        width: 210px;
+    }
+    .ChloePhotoBox {
+        border-right: 0px solid #1C3816;
+    }
+
+    .flex-container2 h2{
+        font-family: 'EB Garamond', serif;
+        color: #163209;
+        font-size: 35px;
+    }
+    .flex-container2 p{
+        color: #163209;
+        font-family: Georgia,Times,Times New Roman,serif;
+        font-size: 20px;
+        line-height: 140%;
+    }
 }
+
 /* for large screens */
 @media screen and (min-width: 801px) {
+    .ChloePhotoBox {
+        order: 1;
+        flex:1;
+        float: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+    }
+    .TextBox {
+        display: flex;
+        order: 2;
+        flex-direction: column;
+        flex:2;
+        text-align: left;
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+    }
     .TextBox2 {
         display: flex;
         order: 1;
@@ -223,39 +319,6 @@ a:hover {
         margin-bottom: 0px; 
         margin-top: 0px; 
         border-left: 1px solid #1C3816; 
+    
     }
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #F2EFE5;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    border: 1px solid #163209;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #FFFFFF;
-}
-
-li a.active {
-    color: white;
-    background-color: #163209;
 }

@@ -1,11 +1,27 @@
+/* FONT */
 .Lexend {
     font-family: 'Lexend', sans-serif;
+    color: #163209;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    line-height: 170%;
 }
-
 .Lekton {
     font-family: 'Lekton', sans-serif;
+    color: #163209;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    line-height: 170%;
 }
-
 h1 {
     font-family: 'Lekton';
     color: #163209;
@@ -14,18 +30,16 @@ h1 {
     letter-spacing: 20px;
     font-weight: 200;
 }
-
+/* TEXT FOR NAV-BAR */
 h2 {
-    font-family: 'Lexend';
+    font-family: 'Lexend', sans-serif;
     color: #163209;
+    font-weight: 300;
     font-size: 28px;
     letter-spacing: 3px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    font-weight: 200;
-
+    font-weight: 100;
+    margin-top: 15px;
 }
-
 h3 {
     font-family: 'Lekton';
     color: #163209;
@@ -35,49 +49,65 @@ h3 {
     margin-bottom: 0px;
     text-align: center;
     font-weight: 100;
+    line-height: 150%;
 }
-
 h4 {
     font-family: 'Lekton';
     color: #163209;
-    font-size: 15px;
+    font-size: 22px;
     text-align: center;
     font-weight: 100;
-}
+    margin-top: 10%;
+    margin-bottom: 10%;
 
+}
 p {
     font-family: 'Lexend', sans-serif;
+    font-weight: 300;
     color: #163209;
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-    font-weight: 100;
+    line-height: 170%;
+    letter-spacing: 1.4px;
 }
+/* FONT END */
 
-.flex-container {
+/* CONTAINERS */
+.Statement {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 800px;
+    text-align: center;
+  }
+.Subtitle{
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left:12%; 
+    margin-right:12%; 
+    margin-bottom:5%; 
 }
-
-.flex-container > div {
-    width: auto;
-    margin-top: 60px;
+.Text{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left:20%; 
+    margin-right:20%; 
 }
-
 .photo-container {
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 10%;
+    border-bottom: solid 1px #163209;   
 }
 
 .text-container {
@@ -87,13 +117,24 @@ p {
     background-color: white;
     justify-content: center;
     text-align: center;
-    margin: 100px;
+    margin: 10%;
 }
-
 .text-container > div {
     margin-left: 0px;
     margin-right: 0px;
 }
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.nav-container > div {
+    width: auto;
+  }
+/* CONTAINERS END*/
 
 #grad1 {
     height: auto;
@@ -101,59 +142,134 @@ p {
     background-image: linear-gradient(white, #4F8B79);
 }
 
+/* ALIGNMENT */
 .alignleft {
     text-align: left;
 }
-
 .alignright {
     text-align: right;
 }
-
 .aligncenter {
     text-align: center;
 }
-
 .centered {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+
+/* NAVIGATION */
 ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
+    margin-left: -7px;
+    margin-bottom: 0;
+    margin-right: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #FFFFFF;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 50px;
     z-index: 2;
-    border: 1px solid #163209;
+    display: flex; 
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: solid 1px #163209;
 }
-
 li {
-    float: left;
+    display: inline;
 }
-
+li.left-element {
+    margin-left: 10px;
+    text-align: left;
+}
+li.center-element {
+    text-align: center;
+}
+li.right-element {
+    margin-right: 10px; 
+    text-align: right;
+}
 li a {
     display: block;
-    color: #FFFFFF;
-    text-align: center;
     padding: 14px 16px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 3px;
     text-decoration: none;
-}
-
+    color: #163209; 
+    font-size: 28px; 
+}  
 li a:hover:not(.active) {
-    background-color: #FFFFFF;
+    background-color: white;
 }
-
 li a.active {
-    color: white;
-    background-color: #163209;
-}
-
-a:hover {
-    text-decoration: underline;
+    color: #163209;
   }
+/* NAVIGATION END */
+@media screen and (max-width: 1200px) {
+    .photo-container h1{
+        font-size: 130px;
+        letter-spacing: 10px;    
+    }
+}
+@media screen and (max-width: 800px) {
+    .photo-container h1{
+        font-size: 100px;
+        letter-spacing: 10px;    
+    }
+    .photo-container p{
+        font-size: 20px;
+    }
+    .Statement h3 {
+        font-size: 35px;
+        letter-spacing: 5px;
+        line-height: 150%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .Statement{
+        height: 400px;
+    }
+    .Subtitle h3{
+        font-size: 35px;
+        letter-spacing: 5px;
+        line-height: 150%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .Subtitle{
+        margin-left:25%; 
+        margin-right:25%; 
+    }
+    .text-container p{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .text-container h4{
+        font-size: 10px;
+    }
+    .Lekton {    
+        font-size: 20px;
+    }
+
+    .nav-container h2{
+        font-size: 20px;
+    }
+    li a {
+        font-size: 20px;
+    }
+    .Text{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left:25%; 
+        margin-right:25%; 
+    }
+}

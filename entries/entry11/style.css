@@ -99,7 +99,6 @@ p{
   align-items: center;
   margin-top: 50px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #321C08;
 }
 .nav-container > div {
   width: auto;
@@ -176,6 +175,7 @@ p{
   text-align: center;
 }
 
+/* NAVIGATION */
 ul {
   list-style-type: none;
   margin-top: 0;
@@ -192,7 +192,6 @@ ul {
   display: flex; 
   justify-content: space-between;
   background-color: #EDEDE3;
-
 }
 li {
   display: inline;
@@ -224,6 +223,7 @@ li a:hover:not(.active) {
 li a.active {
   color: #00543D;
 }
+/* NAVIGATION END */
 
 @media screen and (max-width: 800px) {
   .photo-container h1{

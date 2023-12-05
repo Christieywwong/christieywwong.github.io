@@ -1,36 +1,35 @@
 body {
     height: auto;
-    background-image: linear-gradient(335deg, #FFFFFF, #ECE5C1);
-}
+    background-image: linear-gradient(25deg, #FFFFFF, #EDE1A4)}
 
 h1{
     font-family: "forma-djr-display", sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 150px;   
+    font-size: 100px;   
     color: #000000;
     letter-spacing: 10.5px;
     text-align: center;
-    margin-top: 12%;
-    margin-bottom: 8%;
+    margin-top: 13%;
+    margin-bottom:0%;
 }
 
 h2{
     font-family: "forma-djr-display", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;   
+    font-size: 28px;   
     color: #000000;
     letter-spacing: 3.5px;
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 h3{
     font-family: "forma-djr-display", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
+    font-size: 28px;
     color: #000000;
     letter-spacing: 2.45px;
     margin: 0.4%;
@@ -66,8 +65,9 @@ p{
     flex-direction: column;
     display: flex; 
 }
-
-
+.Title{
+    border-bottom: solid 1px #000000;
+}
 .link{
     text-align: center;
     font-size: 28px;
@@ -105,4 +105,8 @@ a.Imagehover:hover {
     .marquee h3{
         font-size: 22px;
     }
+}
+
+img:hover {
+    opacity: 70%;
 }

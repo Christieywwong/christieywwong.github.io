@@ -61,9 +61,10 @@ li {
 .aligncenter{
     text-align: center;
 }
+
 .centered {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -72,7 +73,18 @@ li {
     bottom: 8px;
     left: 16px;
   }
+  
 
+.bg{
+    background-image: url("imgs/Trees.png");
+    height: 950px; 
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-top: -10px;
+}
 
 .rcorners {
     border-radius: 250px;

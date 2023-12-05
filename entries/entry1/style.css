@@ -118,6 +118,8 @@ p {
     justify-content: center;
     text-align: center;
     margin: 10%;
+    margin-bottom: 0%;
+
 }
 .text-container > div {
     margin-left: 0px;
@@ -140,6 +142,8 @@ p {
     height: auto;
     background-color: white;
     background-image: linear-gradient(white, #4F8B79);
+    margin-bottom: 0%;
+    margin: -10px;
 }
 
 /* ALIGNMENT */
@@ -151,6 +155,8 @@ p {
 }
 .aligncenter {
     text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 .centered {
     position: absolute;
@@ -271,5 +277,6 @@ li a.active {
         margin-top: 5%;
         margin-left:25%; 
         margin-right:25%; 
+        margin-bottom: 0%;
     }
 }

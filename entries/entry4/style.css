@@ -66,14 +66,13 @@ p{
     margin-bottom: 100px;
 } 
 
-  .CampFirePhoto {
+.CampFirePhoto {
     display: flex;
     text-align: right;
     justify-content: flex-start ;
     align-items: center;
     flex-direction: column;
-  }
-
+}
 .TopLeft {
     position: absolute;
     top: -20%;
@@ -81,12 +80,12 @@ p{
 }
 .flex-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 90px; 
-
 }
 .flex-container > div {
-    margin: 80px;
+    margin: 3%;
     line-height: 20px;
 }
 .nav-container {
@@ -96,7 +95,7 @@ p{
     margin-top: 50px; 
     margin-bottom: 0px; 
     margin-right: 0px; 
-    margin-left: 0px; 
+    margin-left: -10px; 
     justify-content: space-between;
 }
 .nav-container > div {
@@ -143,25 +142,6 @@ a.Temagami:hover {
     text-align: center;
 }
 
-/* for mobile */
-@media screen and (max-width: 800px) {
-    .left {
-        order: 2;
-        flex: 1;
-        text-align: left;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-bottom: 0px; 
-        margin-top: 0px; 
-    }
-    .CampFirePhoto {
-        flex: 1;
-        order: 1;
-        text-align: right;
-        margin-bottom: 0px; 
-        margin-top: 0px; 
-    }
-}
 /* NAVIGATION */
 ul {
     list-style-type: none;
@@ -201,6 +181,7 @@ li a {
     font-family: 'Naluka';
     color: #FEA206;
     font-size: 28px;
+    text-decoration: none;
 }
 li a:hover:not(.active) {
     background-color: #FEA206;
@@ -220,12 +201,63 @@ li a.active {
         align-items: flex-start;
         margin-bottom: 0px; 
         margin-top: 0px; 
-    }   .CampFirePhoto {
+    }   
+    .CampFirePhoto {
         flex: 1;
         order: 2;
         text-align: right;
         margin-bottom: 0px; 
         margin-top: 0px; 
     }
+    .left h2{
+        line-height: normal;
+    }
 }
 
+/* for mobile */
+@media screen and (max-width: 850px) {
+    .left {
+        order: 2;
+        flex: 1;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 20px; /* Add some margin to separate the elements */
+    }
+    .CampFirePhoto {
+        flex: 1;
+        order: 1;
+        text-align: right;
+        margin-bottom: 20px; /* Add some margin to separate the elements */
+    }
+    .flex-container {
+        flex-direction: column; /* Change the direction to stack elements vertically */
+        margin: 3%;
+    }
+    .TopLeft {
+        position: static; /* Remove the absolute positioning */
+        margin-top: 20px; /* Add some margin to separate the elements */
+        text-align: left; /* Align the text to the left within the container */
+    }
+    .photo-container h1 {
+        font-size: 100px;
+        text-align: left; /* Align the text to the left within the container */
+    }
+    .title-container h2 {
+        font-size: 35px;
+        text-align: left; /* Align the text to the left within the container */
+    }
+    .left h2 {
+        line-height: normal;
+        font-size: 35px;
+    }
+    .left p {
+        font-size: 20px;
+    }
+    .nav-container h3{
+        font-size: 20px;
+    }
+    li a {
+        font-size: 20px;
+    }
+}

@@ -82,7 +82,6 @@ p::first-letter {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #321C08;
 }
 .nav-container > div {
     width: auto;
@@ -274,5 +273,14 @@ li a.active {
     }
     li a {
         font-size: 22.4px;
+    }
+    .paragraph{
+        margin-left:8%; 
+        margin-right:8%; 
+    }
+    .Statement {
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 1200px;
     }
 }

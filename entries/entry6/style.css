@@ -15,20 +15,19 @@ h1{
     color: #FFC031;
     font-size: 100px; 
     text-align: center;
-    line-height: 2;
     letter-spacing: 2px;
-    margin: -30px;
+    margin: 0px;
 } 
 h2{
     font-family: 'Notable', sans-serif;
     color: #FFC031;
-    font-size: 37.5px; 
+    font-size: 50px; 
     letter-spacing: 2px;
 } 
 h3 {
     font-family: 'Notable', sans-serif;
     color: #FFC031;
-    font-size: 27px;
+    font-size: 28px;
     margin-bottom: 5px;
     margin-top: 10px;
     letter-spacing: 2px;
@@ -42,14 +41,12 @@ h4 {
     letter-spacing: 2px;
     line-height: 1.3;
   }  
-
-
-
 p{
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     color: #FFC031;
-    font-size: 18px; 
+    font-size: 28px; 
     letter-spacing: normal;
+    font-weight: 200;
 } 
 
 .OverlapImages {
@@ -59,23 +56,34 @@ p{
 
 .imtip {
     position: absolute;
-    bottom: 39px;
+    bottom: 4px;
     left: 10%;
     align-items: center;
 
 }
+.pizza{
+    margin-right: -30%;
+}
+
+#rotate {
+    animation: mymove 7s infinite;
+}
+@keyframes mymove {
+    100% {transform: rotate(360deg);}
+  }
 
 .nav-container {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    margin-left: 0px; 
-    margin-right: 0px; 
-    margin-bottom: 0px; 
     margin-top: 50px; 
+    margin-bottom: 0px; 
+    margin-right: 0px; 
+    margin-left: 0px; 
     justify-content: space-between;
-    border-bottom: 2px solid #FFC031;
-
+}
+.nav-container > div {
+    width: auto;
 }
 
 .Statement {
@@ -95,6 +103,7 @@ p{
     justify-content:space-between;
     align-items: flex-start;
     padding: 20px;
+    margin-bottom: 10%;
 }
 .flex-container > * {
     text-align: left;
@@ -109,7 +118,7 @@ p{
     flex-basis: calc(50% - 40px); /* Set the width of each section to 50% with padding */
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
     .left {
         flex-basis: 100%;
         order: 2;
@@ -125,7 +134,7 @@ p{
 }
 
 /* for large screens */
-@media screen and (min-width: 1101px) {
+@media screen and (min-width: 801px) {
     .left {
         order: 1;
         flex: 1;
@@ -144,40 +153,55 @@ p{
     }
 }
 
+/* NAVIGATION */
 ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
+    margin-left: -8px;
+    margin-bottom: 0;
+    margin-right: 0;
     padding: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 50px;
     z-index: 2;
-    border: 1px solid #FFC031;
-    background-color: #FFC031;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: #130802;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
+    display: flex; 
+    justify-content: space-between;
     background-color: #130802;
-  }
-  
-  li a.active {
-    color: #FFC031;
-    background-color: #130802;
-  }
+    border-bottom: solid 1.5px #FFC031;
+}
 
-a:hover {
-    text-decoration: underline;
-  }
+li {
+    display: inline;
+}
+li.left-element {
+    margin-left: 10px;
+    text-align: left;
+}
+li.center-element {
+    text-align: center;
+}
+li.right-element {
+    margin-right: 10px; 
+    text-align: right;
+}
+li a {
+    display: block;
+    padding: 14px 16px;
+    font-family: 'Notable', sans-serif;
+    color: #FFC031;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-style: normal;
+    text-decoration: none;
+    color: #FFC031; 
+}
+li a:hover:not(.active) {
+    background-color: #130802;
+}
+li a.active {
+    color: #FFC031;
+}
+  /* NAVIGATION END */

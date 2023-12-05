@@ -87,6 +87,18 @@ li {
     align-items: center;
 }
 
+a.link:visited {
+    color: #163209;
+    text-decoration: underline;
+}
+a.link:link {
+    color: #163209;
+}
+a.link:hover {
+    color: #BF833C;
+    text-decoration: underline;
+}
+
 
 .nav-container {
     display: flex;

@@ -102,6 +102,7 @@ h2{
   color: #1F1500;
   line-height: 140%;
   font-size: 50px; 
+  letter-spacing: 3px;
   text-align: left;
 } 
 
@@ -137,6 +138,7 @@ p{
   color: #1F1500;
   font-size: 28px; 
   line-height: 140%;
+  letter-spacing: 1.3px;
 } 
 
 .circle {
@@ -300,7 +302,48 @@ img:hover {
 .nav-container > div {
   width: auto;
 }
-
+/* 
 a:hover {
   text-decoration: underline;
+} */
+
+
+@media screen and (max-width: 800px) {
+  .photo-container h1 {
+      font-size: 100px;
+      letter-spacing: 7px;
+  }
+  .Statement h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+
+  }
+  .flex-container h4{
+    font-size: 35px; 
+    letter-spacing: 2px;
+  }
+  .flex-container p{
+    font-size: 20px; 
+    letter-spacing: 0.8px;
+  }
+  .nav-container h3{
+      font-size: 20px;
+  }
+  li a {
+      font-size: 20px;
+  }
+  .button {
+    letter-spacing: 3px;
+    border: solid 2.5px #FFFFFF;
+    background-color:#EF9232;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    height: 77px;
+    width: 361px;
+    border-radius: 85px;
+}
 }

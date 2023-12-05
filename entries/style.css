@@ -90,3 +90,15 @@ a:hover {
     color: 000000;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    h1{
+        font-size: 100px;   
+    }
+    h2{
+        font-size: 40px;   
+    }
+    .marquee h3{
+        font-size: 22px;
+    }
+}

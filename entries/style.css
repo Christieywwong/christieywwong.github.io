@@ -6,7 +6,7 @@ h1{
     font-family: "forma-djr-display", sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 100px;   
+    font-size: 130px;   
     color: #000000;
     letter-spacing: 10.5px;
     text-align: center;
@@ -100,7 +100,7 @@ a.Imagehover:hover {
         font-size: 100px;   
     }
     h2{
-        font-size: 40px;   
+        font-size: 28px;   
     }
     .marquee h3{
         font-size: 22px;

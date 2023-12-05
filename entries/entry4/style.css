@@ -193,21 +193,27 @@ li a.active {
 
 /* for large screens */
 @media screen and (min-width: 801px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Ensure containers wrap to the next line */
+        margin: 20px; /* Adjust margin as needed */
+    }
+    
     .left {
         order: 1;
         flex: 1;
         text-align: left;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 0px; 
-        margin-top: 0px; 
-    }   
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
+    
     .CampFirePhoto {
         flex: 1;
         order: 2;
         text-align: right;
-        margin-bottom: 0px; 
-        margin-top: 0px; 
+        margin-bottom: 20px; /* Adjust margin as needed */
     }
     .left h2{
         line-height: normal;
@@ -216,48 +222,53 @@ li a.active {
 
 /* for mobile */
 @media screen and (max-width: 850px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column; 
+        margin: 10px;
+    }
     .left {
-        order: 2;
         flex: 1;
+        order: 2;
         text-align: left;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 20px; /* Add some margin to separate the elements */
+        margin-bottom: 20px; 
     }
     .CampFirePhoto {
         flex: 1;
         order: 1;
+        flex-direction: column;
         text-align: right;
-        margin-bottom: 20px; /* Add some margin to separate the elements */
-    }
-    .flex-container {
-        flex-direction: column; /* Change the direction to stack elements vertically */
-        margin: 3%;
+        margin-bottom: 20px; 
     }
     .TopLeft {
-        position: static; /* Remove the absolute positioning */
-        margin-top: 20px; /* Add some margin to separate the elements */
-        text-align: left; /* Align the text to the left within the container */
+        position: static; 
+        margin-top: 20px; 
+        text-align: left; 
     }
     .photo-container h1 {
         font-size: 100px;
-        text-align: left; /* Align the text to the left within the container */
+        text-align: left; 
     }
     .title-container h2 {
         font-size: 35px;
-        text-align: left; /* Align the text to the left within the container */
+        text-align: left; 
     }
     .left h2 {
         line-height: normal;
         font-size: 35px;
     }
     .left p {
-        font-size: 20px;
+        font-size: 14px;
     }
     .nav-container h3{
         font-size: 20px;
     }
     li a {
         font-size: 20px;
+    }
+    .CampFirePhoto p {
+        font-size: 14px;
     }
 }

@@ -67,6 +67,7 @@ p{
     display: flex; 
 }
 
+
 .link{
     text-align: center;
     font-size: 28px;
@@ -88,6 +89,9 @@ a:link {
 }
 a:hover {
     color: 000000;
+    text-decoration: underline;
+}
+a.Imagehover:hover {
     text-decoration: underline;
 }
 
